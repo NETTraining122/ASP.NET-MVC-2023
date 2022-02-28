@@ -1,0 +1,24 @@
+﻿@using MvcApplication1.Models
+@{
+    Layout = null;
+}
+ 
+<!DOCTYPE html>
+ 
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Employee - Home</title>
+</head>
+<body>
+    <h3>Home Controller Employee Action</h3>
+    @{
+        var d1 = TempData["mydata"] as Employee;
+    }
+ 
+
+    Name: @d1.Name<br />
+    City: @d1.City<br /><br />
+  
+</body>
+</html>
