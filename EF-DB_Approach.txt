@@ -6,7 +6,7 @@ Step-1 Create one data base and table like Employee where Fields are Id & Name.
 Step-2 Create one sample project in MVC and add this database here for this 
 go in serever explorer then add connection and add here data base. & into visual stdio.
 
-Step-2 Create one EntityDataModel by right clcik on Model and add before that add the sql 
+Step-3 Create one EntityDataModel by right clcik on Model and add before that add the sql 
 serever then add on model folder
 
 Step-4 Write the HomeController Code
