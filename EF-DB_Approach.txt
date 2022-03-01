@@ -1,0 +1,27 @@
+Entity Framework Uisng DB First Approach.
+
+
+Step-1 Create one data base and table like Employee where Fields are Id & Name.
+
+Step-2 Create one sample project in MVC and add this database here for this 
+go in serever explorer then add connection and add here data base. & into visual stdio.
+
+Step-2 Create one EntityDataModel by right clcik on Model and add before that add the sql 
+serever then add on model folder
+
+Step-4 Write the HomeController Code
+
+ public ActionResult Index()
+        {
+            using (var myentity = new Database1Entities1())
+            {
+
+                List<Table> um = myentity.Tables.ToList();
+
+                return View(um);
+            }
+
+        }
+Step-5 Write the Index view .
+
+add automatically from list.
