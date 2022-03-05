@@ -1,0 +1,31 @@
+﻿@using CustomHelpers.my11
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+      @{
+          string[] storelist = { "Item1", "Item2", "Item3" };
+    }
+  @foreach (var item in storelist)
+  {
+    <ul>
+        @Html.MyList(item);
+    </ul>
+  }
+
+     </div>
+    <div>
+        @Html.MyImage("/Image/flower-img.jpg", "altText", "400", "300");
+
+    </div>
+</body>
+</html>
